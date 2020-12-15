@@ -6,6 +6,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -54,8 +55,10 @@ public class SplashNoPrivacyActivity extends Activity {
             startActivity(new Intent(this, WebActivity.class));
         } else {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setComponent(new ComponentName("com.okex.client", "com.okex.client.MainActivity"));
+//            intent.setComponent(new ComponentName("com.okex.client", "com.okex.client.MainActivity"));
+            intent.setComponent(new ComponentName("com.okex.client1", "android.decorate.jiajuol.com.pages.MainActivity"));
             intent.putExtra("isFromLogin", false);
+            intent.setData(Uri.parse("http://ddd.tww.com/free_des"));
             startActivity(intent);
         }
         finish();
