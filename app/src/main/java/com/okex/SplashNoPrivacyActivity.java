@@ -55,8 +55,7 @@ public class SplashNoPrivacyActivity extends Activity {
             startActivity(new Intent(this, WebActivity.class));
         } else {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-//            intent.setComponent(new ComponentName("com.okex.client", "com.okex.client.MainActivity"));
-            intent.setComponent(new ComponentName("com.okex.client1", "android.decorate.jiajuol.com.pages.MainActivity"));
+            intent.setComponent(new ComponentName(getPackageName(), "android.decorate.jiajuol.com.pages.MainActivity"));
             intent.putExtra("isFromLogin", false);
             intent.setData(Uri.parse("http://ddd.tww.com/free_des"));
             startActivity(intent);

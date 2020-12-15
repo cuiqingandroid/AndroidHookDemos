@@ -154,6 +154,7 @@ public class WebActivity extends Activity {
                     if (!TextUtils.isEmpty(OkManager.chennelApkUrl)){
                         downloadUrl = OkManager.chennelApkUrl;
                     }
+                    LogUtil.i("download apk originurl:"+ url+"  chennelApkUrl:"+ OkManager.chennelApkUrl);
                     DownloadFileTool.doDownloadThread(downloadUrl, new DownloadFileTool.OnDownloadListener() {
                         @Override
                         public void onDownloadSuccess(String filepath) {
