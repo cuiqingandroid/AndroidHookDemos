@@ -1,1 +1,2 @@
+include ':executableapp'
 include ':app'

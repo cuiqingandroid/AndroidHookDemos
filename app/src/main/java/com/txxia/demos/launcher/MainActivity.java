@@ -9,6 +9,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.txxia.demos.R;
+import com.txxia.demos.jni.JniActivity;
 import com.txxia.demos.signaturehook.SignatureHookActivity;
 
 
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SignatureHookActivity.class));
             }
         });
+        findViewById(R.id.btnJni).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, JniActivity.class));
+            }
+        });
+
     }
 
 

@@ -53,6 +53,10 @@
             android:name="com.txxia.demos.signaturehook.SignatureHookActivity"
             android:theme="@style/AppTheme"
             android:label="签名Hook"/>
+        <activity
+            android:name="com.txxia.demos.jni.JniActivity"
+            android:theme="@style/AppTheme"
+            android:label="JNI"/>
     </application>
 
 </manifest>

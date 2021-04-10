@@ -28,4 +28,11 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:text="签名hook" />
+
+    <Button
+        android:id="@+id/btnJni"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="JNI" />
 </LinearLayout>
